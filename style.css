@@ -1,0 +1,239 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(transparent, black), url(back-groundIMAGEforLandscpe.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-blend-mode: multiply;
+}
+
+@media (width<481px) {
+    body {
+        background-image: linear-gradient(transparent, black), url(back-groundIMAGEforPotrait.jpeg);
+        ;
+    }
+}
+
+@media (width<781px) {
+    body {
+        background-image: linear-gradient(transparent, black), url(back-groundIMAGEforPotrait.jpeg);
+        ;
+    }
+}
+
+nav {
+    padding: 13px 100px;
+    background-color: black;
+    color: white;
+    
+}
+
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.NavBar h3 {
+    text-align: center;
+}
+
+nav .NavBar ul {
+    padding-top: 5px;
+    display: flex;
+    justify-content: end;
+    gap: 30%;
+}
+
+nav .NavBar ul li {
+    list-style: none;
+}
+
+nav .NavBar ul li a {
+    color: white;
+    text-decoration: none;
+    /* font-weight: 100; */
+    transition: all ease 0.5s;
+}
+
+nav .NavBar ul li a:hover {
+    color: red;
+}
+
+@media (width<481px) {
+    .NavBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav .NavBar ul {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (width<781px) {
+    .NavBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav .NavBar ul {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Hpme Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    color: white;
+}
+
+@media (width<481px) {
+    #home {
+        padding: 40px;
+    }
+
+    #home div {
+        padding-top: 50%;
+
+    }
+}
+
+#home div {}
+
+#home div h1 {
+    color: red;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#home div p {
+    font-weight: 500;
+}
+
+.SearchButton {
+    color: white;
+    font-weight: 500;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 30px;
+    transition: all ease-in 0.4s;
+}
+.SearchButton:hover{
+    background-color: rgb(78, 8, 8);
+    border: 1px solid rgb(78, 8, 8);
+    transform: scale(1.04);
+}
+
+
+
+
+#ChatBotSection {
+    padding: 100px;
+}
+
+
+#ChatBotButton {
+    color: white;
+    font-weight: 600;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    /* padding: 10px 30px; */
+    transition: all ease-in-out 0.5s;
+} 
+#ChatBotButton:hover{
+    transform: scale(1.03);
+    border: 1px solid white;
+}
+
+@media (width<481px) {
+    #ChatBotSection {
+        padding: 50px;
+    }
+
+    #ChatBotButton {
+        position: absolute;
+        top: 85%;
+        right: -0px;
+    }
+}
+
+/* About Section  */
+#about{
+    /* height: 100vh; */
+    padding: 10px 100px;
+    margin-top: 100px;
+}
+@media (width<481px){
+    #about{
+        padding: 10px 40px;
+    }
+}
+
+/* Search Section  */
+#Search{
+    padding: 100px;
+}
+
+.SearchSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1%;
+    /* align-items: ; */
+}
+
+.SearchSection #SearchBar{
+    width: 90%;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+}
+.SearchSection button{
+    background-color: red;
+    border: 1px solid red;
+    padding: 0px 5%;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+@media (width<481px){
+    #Search{
+        padding: 40px;
+    }
+    .SearchSection button{
+        font-size: 17px;
+    }
+    .SearchSection #SearchBar{
+        font-size: 17px;
+    }
+
+}
+
